@@ -1,0 +1,26 @@
+version = 1
+SPDX-PackageName = "nomos-topology"
+SPDX-PackageSupplier = "rodgert@twrodgers.com"
+SPDX-PackageDownloadLocation = "https://github.com/nomos-studio/nomos-topology"
+
+# Clojure source — EPL-2.0
+[[annotations]]
+path = ["src/**", "test/**"]
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2025-2026 nomos-studio contributors"
+SPDX-License-Identifier = "EPL-2.0"
+
+# C++ topology keys header — GPL-3.0-or-later
+[[annotations]]
+path = "include/**"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2025-2026 nomos-studio contributors"
+SPDX-License-Identifier = "GPL-3.0-or-later"
+
+# Build system and project metadata
+[[annotations]]
+path = ["project.clj", "CMakeLists.txt", "README.md", "scripts/**", ".gitignore",
+        "pom.xml", ".lein-failures"]
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2025-2026 nomos-studio contributors"
+SPDX-License-Identifier = "EPL-2.0"
